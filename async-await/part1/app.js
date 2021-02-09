@@ -6,3 +6,14 @@
 // Use the API to get 4 facts on your favorite number. Once you have them all, put them on the page. It’s okay if some of the facts are repeats.
 
 // (Note: You’ll need to make multiple requests for this.)
+
+let favNumber =5;
+let baseURL = "http://www.numbersapi.com";
+
+// 1.
+async function part1() {
+    let data = await $.getJSON(`${baseURL}/${favNumber}?json`);
+    console.log(data);
+  }
+  part1();
+  
