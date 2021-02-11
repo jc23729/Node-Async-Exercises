@@ -16,4 +16,6 @@ async function part1() {
     console.log(data);
   }
   part1();
+
+  
   
