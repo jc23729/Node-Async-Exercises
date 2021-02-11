@@ -17,5 +17,10 @@ async function part1() {
   }
   part1();
 
-  
-  
+//2
+const favNumbers = [7, 8, 9];
+async function part2() {
+  let data = await $.getJSON(`${baseURL}/${favNumbers}?json`);
+  console.log(data);
+}
+
